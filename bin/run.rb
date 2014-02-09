@@ -1,6 +1,6 @@
-$LOAD_PATH << File.expand_path('../lib')
+$LOAD_PATH << File.expand_path('../../lib', __FILE__)
 
 require 'rss2social'
 
-rss = Rss2Social::Source.new
-
+rss = RSS2Social::UpdateManager.new
+rss.run
